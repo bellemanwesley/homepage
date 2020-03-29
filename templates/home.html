@@ -1,0 +1,24 @@
+<html>
+<title>Wesley's Homepage</title>
+<head>
+  <link rel="stylesheet" href="https://wkbonline-files.s3.us-east-2.amazonaws.com/homepage.css">
+</head>
+<body>
+	<div class = "header">
+		<h1>Wesley's Homepage</h1>
+	</div>
+
+	<div class="topnav">
+  		<a href="{% url 'home' %}">Home</a>
+  		<a href="{% url 'ukrainian' %}">Ukrainian</a>
+  		<a href="{% url 'workout' %}">Workout</a>
+	</div>
+
+	{% if data %}
+
+	{{data | safe}}
+	
+	{% endif %}
+
+</body>
+</html>
