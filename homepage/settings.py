@@ -25,7 +25,7 @@ SECRET_KEY = 'l(fg#h0vl_i(!-9c8*7vu@(t+$ywn5u#7eko3rivta*t3+gt*n'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['newsite.io']
+ALLOWED_HOSTS = ['newsite.io','3.19.68.64']
 
 
 # Application definition
