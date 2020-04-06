@@ -13,3 +13,7 @@ def workout(request):
         data = requests.get('https://raw.githubusercontent.com/bellemanwesley/homepage/master/s3_files/workout_content.html')
         return(render(request,'home.html',{'data':data.text}))
 
+def ukrainian_progress(request):
+	data = requests.get('https://raw.githubusercontent.com/bellemanwesley/homepage/master/s3_files/ukrainian/progress_content.html')
+        return(render(request,'home.html',{'data':data.text}))
+

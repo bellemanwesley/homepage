@@ -22,4 +22,5 @@ urlpatterns = [
     url(r'^$',views.home,name="home"),
     url(r'^ukrainian',views.ukrainian,name="ukrainian"),
     url(r'^workout',views.workout,name="workout"),
+    url(r'^ukrainian/progress',views.ukrainian_progress,name="ukrainian_progress"),
 ]
