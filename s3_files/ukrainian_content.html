@@ -12,11 +12,9 @@
   
     <div class="col-lg-4">
       <h1>Check these out!</h1>
-      <p><form action="ukrainian_progress" method="GET">
-		<button type="submit" class="btn btn-outline-dark btn-lg btn-block">My Progress</button>
-      </form></p>
+      <p><a type="button" class="btn btn-outline-dark btn-lg btn-block" href='{% url 'ukrainian-accent' %}'>Accent Tool</button></a></p>
       <br>
-      <p><a type="button" class="btn btn-outline-dark btn-lg btn-block" href='{% url 'ukrainian-accent' %}'>Accent Tool</button></p>
+      <p><a type="button" class="btn btn-outline-dark btn-lg btn-block" href='{% url 'ukrainian-accent' %}'>Accent Tool</a></p>
       <br>
       <p><button type="button" class="btn btn-outline-dark btn-lg btn-block" onclick="location.href='{% url 'ukrainian-writings' %}'">Ukrainian Writings</button></p>
       <br>
