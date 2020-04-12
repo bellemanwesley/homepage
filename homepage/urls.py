@@ -25,4 +25,5 @@ urlpatterns = [
     url(r'^progress/',views.ukrainian_progress,name="ukrainian_progress"),
     url(r'ukrainian_books/',views.ukrainian_books,name="ukrainian_books"),
     url(r'^accent/',views.ukrainian_accent,name="ukrainian_accent"),
+    url(r'^reader/',views.reader,name="reader"),
 ]

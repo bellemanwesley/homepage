@@ -27,7 +27,7 @@ key_file.close()
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['newsite.io','3.19.68.64','www.wkbonline.net']
+ALLOWED_HOSTS = ['www.wkbonline.net']
 
 
 # Application definition
@@ -56,7 +56,7 @@ ROOT_URLCONF = 'homepage.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['/home/bellemanwesley/homepage/templates'],
+        'DIRS': ['/home/ec2-user/homepage/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
