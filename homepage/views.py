@@ -18,5 +18,5 @@ def ukrainian_progress(request):
         return(render(request,'home.html',{'data':data.text}))
 
 def ukrainian_books(request):
-        data = requests.get('https://raw.githubusercontent.com/bellemanwesley/homepage/master/s3_files/ukrainian/progress_content.html')
+        data = requests.get('https://raw.githubusercontent.com/bellemanwesley/homepage/master/s3_files/ukrainian/books_content.html')
         return(render(request,'home.html',{'data':data.text}))
