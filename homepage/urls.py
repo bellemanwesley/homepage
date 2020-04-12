@@ -23,4 +23,5 @@ urlpatterns = [
     url(r'^ukrainian',views.ukrainian,name="ukrainian"),
     url(r'^workout',views.workout,name="workout"),
     url(r'^progress',views.ukrainian_progress,name="ukrainian_progress"),
+    url(r'^ukrainian_books',views.ukrainian_books,name="ukrainian_books"),
 ]
