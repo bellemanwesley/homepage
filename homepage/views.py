@@ -20,3 +20,8 @@ def ukrainian_progress(request):
 def ukrainian_books(request):
         data = requests.get('https://raw.githubusercontent.com/bellemanwesley/homepage/master/s3_files/ukrainian/books_content.html')
         return(render(request,'home.html',{'data':data.text}))
+
+def ukrainian_accent(request)
+        data = requests.get('https://raw.githubusercontent.com/bellemanwesley/homepage/master/s3_files/ukrainian/accent_content.html')
+        return(render(request,'home.html',{'data':data.text}))
+
