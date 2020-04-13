@@ -12,11 +12,11 @@
 
 <!-- move this script to an external file-->
 <script>
-function get_content(pagename){
+function post_data(data){
 	var xhttp = new XMLHttpRequest();
-	xhttp.open("GET", "/get_content/?cname=ukrainian", true);
+	xhttp.open("POST", "/post_data/", true);
 	xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-	xhttp.send();
+	xhttp.send(data);
 }
 </script>
 
