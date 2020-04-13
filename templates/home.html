@@ -19,11 +19,15 @@ function post_data(data){
 	xhttp.send(data);
 }
 
-csrf_tokens = documentGetElementsByName("csrfmiddlewaretoken");
+var csrf_tokens = document.getElementsByName("csrfmiddlewaretoken");
+console.log(csrf_tokens);
+console.log(csrf_tokens.length);
 if (csrf_tokens.length > 1) {
 	for (i=1; i<csrf_tokens.length; i++) {
-		csrf_tokens[i].value = csrf_tokens[0].value
-	{
+		console.log(i);
+		csrf_tokens[i].value = csrf_tokens[0].value;
+		console.log(csrf_tokens[i].value);
+	}
 }
 </script>
 {% csrf_token %}
