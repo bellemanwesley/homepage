@@ -27,3 +27,10 @@ def reader(request):
 		data_start = file_data.find("<section>")
 		file_data = file_data[data_start:len(file_data)]
         return(render(request,'reader.html',{'data':file_data}))
+
+def post_data(request):
+	password = request.POST.get('password','')
+	with open('/home/ec2-user/keys/book_key.txt') as f:
+		correct = f.readlines()[0]
+	if password == correct:
+		return HttpResponseRedirect('/ukrainian_books/')
