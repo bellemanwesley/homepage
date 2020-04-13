@@ -20,10 +20,9 @@ from . import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$',views.home,name="home"),
-    url(r'^ukrainian/',views.ukrainian,name="ukrainian"),
-    url(r'^workout/',views.workout,name="workout"),
     url(r'^progress/',views.ukrainian_progress,name="ukrainian_progress"),
     url(r'ukrainian_books/',views.ukrainian_books,name="ukrainian_books"),
     url(r'^accent/',views.ukrainian_accent,name="ukrainian_accent"),
     url(r'^reader/',views.reader,name="reader"),
+    url(r'^get_content/',views.get_content,name="get_content"),
 ]
