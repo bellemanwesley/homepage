@@ -1,6 +1,7 @@
 <html>
 <title>Wesley's Homepage</title>
 <head>
+<link rel="icon" href="https://pupuphooray.com/wp-content/uploads/2019/03/dog-icon.png">
 
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -18,17 +19,7 @@ function post_data(data){
 	xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 	xhttp.send(data);
 }
-
-var csrf_tokens = document.getElementsByName("csrfmiddlewaretoken");
-console.log(csrf_tokens);
-console.log(csrf_tokens.length);
-if (csrf_tokens.length > 1) {
-	for (i=1; i<csrf_tokens.length; i++) {
-		console.log(i);
-		csrf_tokens[i].value = csrf_tokens[0].value;
-		console.log(csrf_tokens[i].value);
-	}
-}
+console.log(document.getElementsByName('csrfmiddlewaretoken'));
 </script>
 {% csrf_token %}
 </head>
