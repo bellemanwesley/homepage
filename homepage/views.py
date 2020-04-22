@@ -4,8 +4,6 @@ from django.http import HttpResponseRedirect
 import requests
 import sys
 import urllib
-sys.path.insert(0, '/home/ec2-user/homepage/homepage/localviews/')
-import ukrainian
 
 def home(request):
 	return HttpResponseRedirect('/get_content/?cname=home')
