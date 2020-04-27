@@ -1,3 +1,10 @@
+function clear_active() {
+  all_navs = document.getElementsByName("navs");
+  for(i=0;i<all_navs.length;i++) {
+    all_navs[i].className="nav-item";
+  }
+}
+
 function home_content() {
   var home_html = `<div class="container">
 	<div class="row">
@@ -19,7 +26,7 @@ function home_content() {
   		</div>
 	</div>
   </div>`;
-
+  clear_active();
   document.getElementById("nav_home").className = "nav-item active";
   document.getElementById("page_content").innerHTML = home_html;
 }
@@ -47,7 +54,7 @@ function ukrainian_content() {
   	  	</div>
 	 </div>
 </div>`
-  
+  clear_active();
   document.getElementById("nav_ukrainian").className = "nav-item active";
   document.getElementById("page_content").innerHTML = ukrainian_html;
 }
