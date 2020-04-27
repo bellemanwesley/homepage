@@ -1,5 +1,5 @@
 function home_content() {
-var home_html = `<div class="container-fluid">
+  var home_html = `<div class="container-fluid">
 	<div class="row">
   		<div class="col">
     		<h2>This is my dog</h2>
@@ -12,13 +12,13 @@ var home_html = `<div class="container-fluid">
   		</div>
   
   		<div class="col">
-        <h2>Find me on...</h2>
-        <p><a href="https://github.com/bellemanwesley" target="_blank"><img src="https://i.ytimg.com/vi/OEGm7LXAN_c/maxresdefault.jpg" style="width:300px;"></img></a></p>
-        <br>
-        <p><a href="https://www.linkedin.com/in/wesley-belleman-183406146/" target="_blank"><img src="https://mlqmtwka8c9g.i.optimole.com/gOh5_w-LkbUQGvD/w:366/h:153/q:85/dpr:2.6/https://www.competethemes.com/wp-content/uploads/2018/07/make-site-like-linkedin.png" style="width:300px;"></img></a>
+        	<h2>Find me on...</h2>
+        	<p><a href="https://github.com/bellemanwesley" target="_blank"><img src="https://i.ytimg.com/vi/OEGm7LXAN_c/maxresdefault.jpg" style="width:300px;"></img></a></p>
+        	<br>
+        	<p><a href="https://www.linkedin.com/in/wesley-belleman-183406146/" target="_blank"><img src="https://mlqmtwka8c9g.i.optimole.com/gOh5_w-LkbUQGvD/w:366/h:153/q:85/dpr:2.6/https://www.competethemes.com/wp-content/uploads/2018/07/make-site-like-linkedin.png" style="width:300px;"></img></a>
   		</div>
 	</div>
-</div>`;
+  </div>`;
 
 document.getElementById("nav_home").className = "nav-item active";
 document.getElementById("page_content").innerHtml = home_html;
