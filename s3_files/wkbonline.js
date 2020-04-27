@@ -21,5 +21,5 @@ function home_content() {
   </div>`;
 
 document.getElementById("nav_home").className = "nav-item active";
-document.getElementById("page_content").innerHtml = home_html;
+document.getElementById("page_content").innerHTML = home_html;
 }
