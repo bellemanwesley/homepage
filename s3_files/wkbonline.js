@@ -20,6 +20,35 @@ function home_content() {
 	</div>
   </div>`;
 
-document.getElementById("nav_home").className = "nav-item active";
-document.getElementById("page_content").innerHTML = home_html;
+  document.getElementById("nav_home").className = "nav-item active";
+  document.getElementById("page_content").innerHTML = home_html;
 }
+
+function ukrainian_content() {
+  var ukrainian_html = `<div class="container-fluid">
+	<div class="row">
+
+  		<div class="col">
+        	<br>
+       		<img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Flag_of_Ukraine.jpg" style="width:300px;"></img>
+    		<h2>My Journey</h2>
+    		<p>I started learning Ukrainian in June of 2017. Three years later and I still have a long way to go!</p>
+        	<p>Available information technology and the internet have been invaluable to my journey learning Ukrainian. I want to share here some of my Ukrainian projects for anyone who might be interested as well as a way for me to document and organize my work.</p>
+  		</div>
+  
+      	<div class="col">
+      		<h1>My Articles</h1>
+      		<p>Coming soon!</p>
+  
+  	  	</div>
+  	  	<div class="col">
+      		<h1>Progress</h1>
+      		<p> Coming soon! </p>
+  	  	</div>
+	 </div>
+</div>`
+  
+  document.getElementById("nav_ukrainian").className = "nav-item active";
+  document.getElementById("page_content").innerHTML = ukrainian_html;
+}
+  
