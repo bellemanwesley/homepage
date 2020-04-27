@@ -1,5 +1,5 @@
 function home_content() {
-var home_html = `<div class="container">
+var home_html = `<div class="container-fluid">
 	<div class="row">
   		<div class="col">
     		<h2>This is my dog</h2>
