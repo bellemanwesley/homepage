@@ -20,8 +20,5 @@ from . import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$',views.home,name="home"),
-    url(r'ukrainian_books/',views.ukrainian_books,name="ukrainian_books"),
-    url(r'^reader/',views.reader,name="reader"),
-    url(r'^get_content/',views.get_content,name="get_content"),
     url(r'^post_data/',views.post_data,name="post_data"),
 ]
