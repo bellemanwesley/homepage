@@ -32,7 +32,7 @@ function home_content() {
 }
 
 function ukrainian_content() {
-  var ukrainian_html = `<div class="container-fluid">
+  var ukrainian_html = `<div class="container">
 	<div class="row">
 
   		<div class="col">
