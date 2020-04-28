@@ -58,4 +58,18 @@ function ukrainian_content() {
   document.getElementById("nav_ukrainian").className = "nav-item active";
   document.getElementById("page_content").innerHTML = ukrainian_html;
 }
+
+function workout_content() {
+  var workout_html = ``;
+  clear_active();
+  document.getElementById("nav_workout").className = "nav-item active";
+  document.getElementById("page_content").innerHTML = workout_html;
+}
+
+function it_content() {
+  var it_html = ``;
+  clear_active();
+  document.getElementById("nav_it").className = "nav-item active";
+  document.getElementById("page_content").innerHTML = it_html;
+}
   
