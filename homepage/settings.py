@@ -20,12 +20,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-key_file = open('/home/ec2-user/keys/django_key.txt','r')
+key_file = open('/home/ubuntu/keys/django_key.txt','r')
 SECRET_KEY = key_file.readlines()[0]
 key_file.close()
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [u'127.0.0.1']
 
@@ -56,7 +56,7 @@ ROOT_URLCONF = 'homepage.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['/home/ec2-user/homepage/templates'],
+        'DIRS': ['/home/ubuntu/environment/homepage/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
