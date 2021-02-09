@@ -107,13 +107,13 @@ function projects_content() {
   
   		<div hidden id="forwarder" class="col">
   		  <div class="row">
-  		    <a href="https://forwarder.wkbonline.net/" target="_blank">
-  	  	    <img name="head_img" src='https://wkbonline-files.s3.us-east-2.amazonaws.com/double-forward-arrow-in-green-hi.png'></img>
+  		    <a href="https://aigames.wkbonline.net/" target="_blank">
+  	  	    <img name="head_img" src='https://images.unsplash.com/photo-1523875194681-bedd468c58bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80'></img>
   	  	  </a>
         </div>
         <div class="row d-flex justify-content-center">
-          <a href="https://forwarder.wkbonline.net/" target="_blank" style="text-decoration:none; color: #9B59B6;">
-  	  	    <h2 class="display-3">Site Forwarder</h2>
+          <a href="https://aigames.wkbonline.net/" target="_blank" style="text-decoration:none; color: #9B59B6;">
+  	  	    <h2 class="display-3">AI Games</h2>
   	  	  </a>
   	  	</div>
   		</div>
