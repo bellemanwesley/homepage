@@ -1,0 +1,1 @@
+aws s3 cp --recursive --exclude ".*" --acl public-read ./ s3://www.wkbonline.net/
