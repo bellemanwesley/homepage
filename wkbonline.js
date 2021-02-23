@@ -17,8 +17,8 @@ function home_content() {
     <img id="archie" src="/images/Archie.jpeg">
     </div>
     <div class="row">
-    <a target="_blank" href="https://www.linkedin.com/in/wesley-belleman-183406146/"><img id="linkedin" src="https://www.competethemes.com/wp-content/uploads/2018/07/make-site-like-linkedin.png"></img></a>
-    <a target="_blank" href="https://medium.com/@bellemanwesley"><img id="medium" src="/images/Medium+Logo.png"></img></a>
+    <a target="_blank" href="https://www.linkedin.com/in/wesley-belleman-183406146/"><img id="linkedin" src="/images/make-site-like-linkedin.png"></img></a>
+    <a target="_blank" href="https://medium.com/@bellemanwesley"><img id="medium" src="/images/Medium-Logo.png"></img></a>
     <a target="_blank" href="https://github.com/bellemanwesley"><img id="github" src="https://www.biocentric.nl/wp-content/uploads/2018/08/cec44feb-0b1b-4fe3-936d-67a51a1fe28e.png"></img></a>
     </div>
     </div>
