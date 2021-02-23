@@ -14,11 +14,11 @@ function home_content() {
     <div id="text_cover" class="bd-highlight p-5" style="background-color: #566573; opacity: 0;">
     <p id="welcome"><h1>Welcome to my personal website</h1></p>
     </div>
-    <img id="archie" src="https://wkbonline-files.s3.us-east-2.amazonaws.com/Archie.jpeg">
+    <img id="archie" src="/images/Archie.jpeg">
     </div>
     <div class="row">
-    <a target="_blank" href="https://www.linkedin.com/in/wesley-belleman-183406146/"><img id="linkedin" src="https://mlqmtwka8c9g.i.optimole.com/gOh5_w-LkbUQGvD/w:366/h:153/q:85/dpr:2.6/https://www.competethemes.com/wp-content/uploads/2018/07/make-site-like-linkedin.png"></img></a>
-    <a target="_blank" href="https://medium.com/@bellemanwesley"><img id="medium" src="https://wkbonline-files.s3.us-east-2.amazonaws.com/Medium+Logo.png"></img></a>
+    <a target="_blank" href="https://www.linkedin.com/in/wesley-belleman-183406146/"><img id="linkedin" src="https://www.competethemes.com/wp-content/uploads/2018/07/make-site-like-linkedin.png"></img></a>
+    <a target="_blank" href="https://medium.com/@bellemanwesley"><img id="medium" src="/images/Medium+Logo.png"></img></a>
     <a target="_blank" href="https://github.com/bellemanwesley"><img id="github" src="https://www.biocentric.nl/wp-content/uploads/2018/08/cec44feb-0b1b-4fe3-936d-67a51a1fe28e.png"></img></a>
     </div>
     </div>
@@ -82,7 +82,7 @@ function projects_content() {
   		<div id="vitamova" class="col">
   		  <div class="row">
   		    <a href="https://vitamova.wkbonline.net/" target="_blank">
-  		      <img name="head_img" src='https://wkbonline-files.s3.us-east-2.amazonaws.com/Flags-of-the-world.jpg'></img>
+  		      <img name="head_img" src='/images/Flags-of-the-world.jpg'></img>
   		    </a>
   		  </div>
   		  <div class="row d-flex justify-content-center">
@@ -95,7 +95,7 @@ function projects_content() {
   		<div hidden id="cheetah" class="col">
   		  <div class="row">
   		    <a href="https://cheetah.link/" target="_blank">
-  		      <img name="head_img" src='https://wkbonline-files.s3.us-east-2.amazonaws.com/cheetah.jpg'></img>
+  		      <img name="head_img" src='/images/cheetah.jpg'></img>
   		    </a>
   		  </div>
   		  <div class="row d-flex justify-content-center">
