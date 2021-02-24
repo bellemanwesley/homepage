@@ -18,7 +18,7 @@ function home_content() {
     </div>
     <div class="row">
     <a target="_blank" href="https://www.linkedin.com/in/wesley-belleman-183406146/"><img id="linkedin" src="/images/make-site-like-linkedin.png"></img></a>
-    <a target="_blank" href="https://medium.com/@bellemanwesley"><img id="medium" src="/images/Medium-Logo.png"></img></a>
+    <a target="_blank" href="https://bellemanwesley.medium.com/"><img id="medium" src="/images/Medium-Logo.png"></img></a>
     <a target="_blank" href="https://github.com/bellemanwesley"><img id="github" src="https://www.biocentric.nl/wp-content/uploads/2018/08/cec44feb-0b1b-4fe3-936d-67a51a1fe28e.png"></img></a>
     </div>
     </div>
@@ -81,12 +81,12 @@ function projects_content() {
 	    <div class="col-1"></div>
   		<div id="vitamova" class="col">
   		  <div class="row">
-  		    <a href="https://vitamova.wkbonline.net/" target="_blank">
+  		    <a href="https://vitamova.com/" target="_blank">
   		      <img name="head_img" src='/images/Flags-of-the-world.jpg'></img>
   		    </a>
   		  </div>
   		  <div class="row d-flex justify-content-center">
-  		    <a href="https://vitamova.wkbonline.net/" target="_blank" style="text-decoration:none; color: #9B59B6;">
+  		    <a href="https://vitamova.com/" target="_blank" style="text-decoration:none; color: #9B59B6;">
   		      <h2 class="display-3">&nbspVitamova</h2>
   		    </a>
   		  </div>
@@ -107,12 +107,12 @@ function projects_content() {
   
   		<div hidden id="forwarder" class="col">
   		  <div class="row">
-  		    <a href="https://aigames.wkbonline.net/" target="_blank">
+  		    <a href="http://aigames.wkbonline.net/" target="_blank">
   	  	    <img name="head_img" src='https://images.unsplash.com/photo-1523875194681-bedd468c58bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80'></img>
   	  	  </a>
         </div>
         <div class="row d-flex justify-content-center">
-          <a href="https://aigames.wkbonline.net/" target="_blank" style="text-decoration:none; color: #9B59B6;">
+          <a href="http://aigames.wkbonline.net/" target="_blank" style="text-decoration:none; color: #9B59B6;">
   	  	    <h2 class="display-3">AI Games</h2>
   	  	  </a>
   	  	</div>
