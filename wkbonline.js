@@ -30,6 +30,31 @@ function home_content() {
   center_content(0);
 }
 
+function philanthropy_content() {
+  var philanthropy_html = `
+    <br>
+    <br>
+    <div class="container-fluid">
+    <div class="row justify-content-center">
+    <div id="text_cover" class="bd-highlight p-5" style="background-color: #566573; opacity: 0;">
+    <p id="welcome"><h1>Welcome to my personal website</h1></p>
+    </div>
+    <img id="archie" src="/images/Archie.jpeg">
+    </div>
+    <div class="row">
+    <a target="_blank" href="https://www.linkedin.com/in/wesley-belleman-183406146/"><img id="linkedin" src="/images/make-site-like-linkedin.png"></img></a>
+    <a target="_blank" href="https://bellemanwesley.medium.com/"><img id="medium" src="/images/Medium-Logo.png"></img></a>
+    <a target="_blank" href="https://github.com/bellemanwesley"><img id="github" src="https://www.biocentric.nl/wp-content/uploads/2018/08/cec44feb-0b1b-4fe3-936d-67a51a1fe28e.png"></img></a>
+    </div>
+    </div>
+  `;
+  clear_active();
+  document.getElementById("nav_philanthropy").className = "nav-item active";
+  document.getElementById("page_content").innerHTML = philanthropy_html;
+  fan_links(window.innerWidth/20);
+  center_content(0);
+}
+
 async function center_content(step) {
   var text_cover = document.getElementById("text_cover");
   var archie = document.getElementById("archie");
