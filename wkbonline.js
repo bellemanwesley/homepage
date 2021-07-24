@@ -35,24 +35,32 @@ function philanthropy_content() {
     <br>
     <br>
     <div class="container-fluid">
-    <div class="row justify-content-center">
-    <div id="text_cover" class="bd-highlight p-5" style="background-color: #566573; opacity: 0;">
-    <p id="welcome"><h1>Welcome to my personal website</h1></p>
-    </div>
-    <img id="archie" src="/images/Archie.jpeg">
-    </div>
     <div class="row">
-    <a target="_blank" href="https://www.linkedin.com/in/wesley-belleman-183406146/"><img id="linkedin" src="/images/make-site-like-linkedin.png"></img></a>
-    <a target="_blank" href="https://bellemanwesley.medium.com/"><img id="medium" src="/images/Medium-Logo.png"></img></a>
-    <a target="_blank" href="https://github.com/bellemanwesley"><img id="github" src="https://www.biocentric.nl/wp-content/uploads/2018/08/cec44feb-0b1b-4fe3-936d-67a51a1fe28e.png"></img></a>
+      <div class="col">
+        <div id="barchart_values" style="width: 900px; height: 300px;"></div>
+      </div>
+      <div class="col" style="background-color: #D5D8DC">
+        <p><h1>About my philanthropy...</h1></p>
+        <br>
+        <p>
+        Here you can see which organizations I have donated to and how much.
+        I've become convinced by the arguments of <a href="https://www.williammacaskill.com/" target="_blank">
+        Will MacAskill</a> not only on the importance of giving but also the importance of talking
+        about our giving. I hope that he is right and me sharing information about my donations
+        inspires my friends and other connections to also consider giving. I am by no means
+        a very wealthy person in terms of a first world economy, but I recognize that my 
+        wealth is very high compared to most citizens of the world. It is my moral responsibility
+        to donate and encourage others to as well. If you have thought about giving before and still
+        aren't, I highly recommend checking out Will's work!
+        </p>
+      </div>
     </div>
     </div>
   `;
   clear_active();
   document.getElementById("nav_philanthropy").className = "nav-item active";
   document.getElementById("page_content").innerHTML = philanthropy_html;
-  fan_links(window.innerWidth/20);
-  center_content(0);
+  philanthropy_chart();
 }
 
 async function center_content(step) {
@@ -119,12 +127,12 @@ function projects_content() {
   
   		<div hidden id="cheetah" class="col">
   		  <div class="row">
-  		    <a href="https://cheetah.link/" target="_blank">
+  		    <a href="https://github.com/WKBSoft/codecheetah" target="_blank">
   		      <img name="head_img" src='/images/cheetah.jpg'></img>
   		    </a>
   		  </div>
   		  <div class="row d-flex justify-content-center">
-  		    <a href="https://cheetah.link/" target="_blank" style="text-decoration:none; color: #9B59B6;">
+  		    <a href="https://github.com/WKBSoft/codecheetah" target="_blank" style="text-decoration:none; color: #9B59B6;">
   		      <h2 class="display-3">&nbsp&nbsp&nbspCodeCheetah</h2>
   		    </a>
   		  </div>
@@ -156,13 +164,6 @@ function projects_content() {
   }
 }
 
-function articles_content() {
-  var articles_html = ``;
-  clear_active();
-  document.getElementById("nav_articles").className = "nav-item active";
-  document.getElementById("page_content").innerHTML = articles_html;
-}
-
 async function center_content_p(step,active_id) {
   var active_element = document.getElementById(active_id);
   var m_2 = step % 200;
@@ -186,4 +187,35 @@ async function center_content_p(step,active_id) {
   }
   active_element.style=("cursor: pointer; opacity:").concat(mult.toString()).concat(";");
   setTimeout(() => {  center_content_p(step+1,active_id); }, 20);
+}
+
+function philanthropy_chart() {
+  google.charts.load("current", {packages:["corechart"]});
+  google.charts.setOnLoadCallback(drawChart);
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+      ["Charity", "Donation", { role: "style" } ],
+      ["Givewell", 250, "#b87333"],
+      ["LSPC", 1750, "silver"],
+      ["Global Health and Development Fund", 3500, "gold"]
+    ]);
+
+    var view = new google.visualization.DataView(data);
+    view.setColumns([0, 1,
+                     { calc: "stringify",
+                       sourceColumn: 1,
+                       type: "string",
+                       role: "annotation" },
+                     2]);
+
+    var options = {
+      title: "My 2021 Donations, in USD",
+      width: 600,
+      height: 400,
+      bar: {groupWidth: "95%"},
+      legend: { position: "none" },
+    };
+    var chart = new google.visualization.BarChart(document.getElementById("barchart_values"));
+    chart.draw(view, options);
+}
 }
